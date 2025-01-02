@@ -1,1 +1,1 @@
-# playwright-practise
+# Debug Chromium Installation on Github CI

@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  PYTHON_VERSION: "3.12.8"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: install-python-dependency
+        run: |
+          pip install -e .
+
+      - name: run-script
+        run: |
+          python script.py

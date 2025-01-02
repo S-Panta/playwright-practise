@@ -1,0 +1,12 @@
+[project]
+name = "playwright-practise-test"
+version = "0.0.1"
+description = "just testing chromium in github action"
+authors = [
+    { name = "Sabin"}
+]
+
+
+dependencies = [
+    "playwright==1.49.1",
+]
